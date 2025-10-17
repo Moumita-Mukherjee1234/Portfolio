@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moumita Mukherjee - Portfolio</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+<header id="header">
+    <nav class="navbar">
+        <div class="nav-brand">
+            <h2>Moumita Mukherjee</h2>
+        </div>
+        <ul class="nav-menu">
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#education" class="nav-link">Education</a></li>
+
+            <li><a href="#certificates" class="nav-link">Certificates</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="hamburger"><span></span><span></span><span></span></div>
+    </nav>
+</header>
+
+<section id="hero" class="hero-section">
+    <div class="hero-content">
+        <div class="hero-text">
+            <h1 class="hero-title">Hi, I'm <span class="highlight">Moumita Mukherjee</span></h1>
+            <p class="hero-subtitle">Computer Science Student | BIT Sindri</p>
+            <p class="hero-description">
+                Enthusiastic learner with a passion for problem-solving, data analysis, and technology. 
+                Always eager to explore new tools, technologies, and real-world applications.
+            </p>
+            <div class="hero-buttons">
+                <a href="#skills" class="btn btn-primary">View Skills</a>
+                <button class="btn btn-secondary" onclick="downloadResume()">
+                    <i class="fas fa-download"></i> Download Resume
+                </button>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="profile-photo">
+                <img src="profile.jpg" alt="Moumita Mukherjee" class="profile-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                <div class="profile-placeholder" style="display: none;">
+                    <i class="fas fa-user"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="scroll-indicator"><div class="scroll-arrow"></div></div>
+</section>
+
+<section id="about" class="about-section">
+    <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>Hi, I'm Moumita Mukherjee, a dedicated Computer Science Engineering student at BIT Sindri. 
+                I have a keen interest in programming, data visualization, and technology-driven solutions.</p>
+                <p>I love learning new tools and contributing to projects that create impact. 
+                My focus is on growing as a developer while continuously exploring new opportunities.</p>
+            </div>
+            <div class="about-stats">
+                <div class="stat-item"><h3>2+</h3><p>Years of Learning</p></div>
+                <div class="stat-item"><h3>3+</h3><p>Tech Skills</p></div>
+                <div class="stat-item"><h3>Multiple</h3><p>Projects</p></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="skills" class="skills-section">
+    <div class="container">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-item"><i class="fas fa-code"></i><h3>C++</h3><div class="skill-bar"><div class="skill-progress" data-width="85%"></div></div></div>
+            <div class="skill-item"><i class="fab fa-python"></i><h3>Python</h3><div class="skill-bar"><div class="skill-progress" data-width="80%"></div></div></div>
+            <div class="skill-item"><i class="fas fa-database"></i><h3>MySQL</h3><div class="skill-bar"><div class="skill-progress" data-width="75%"></div></div></div>
+            <div class="skill-item"><i class="fas fa-network-wired"></i><h3>Data Structures & Algorithms</h3><div class="skill-bar"><div class="skill-progress" data-width="80%"></div></div></div>
+            <div class="skill-item"><i class="fas fa-chart-bar"></i><h3>Power BI & Excel</h3><div class="skill-bar"><div class="skill-progress" data-width="70%"></div></div></div>
+            <div class="skill-item"><i class="fas fa-laptop-code"></i><h3>VS Code & MySQL Workbench</h3><div class="skill-bar"><div class="skill-progress" data-width="70%"></div></div></div>
+        </div>
+    </div>
+</section>
+
+<section id="education" class="education-section">
+    <div class="container">
+        <h2 class="section-title">Education</h2>
+        <div class="timeline">
+            <div class="timeline-item" data-aos="fade-left">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <h3>B.Tech in Computer Science and Engineering</h3>
+                    <h4>Birsa Institute of Technology, Sindri</h4>
+                    <p class="timeline-date">2023 – 2027</p>
+                    <p>Currently pursuing B.Tech in CSE with SGPA 8.36. Actively engaged in coding and exploring emerging technologies.</p>
+                </div>
+            </div>
+            <div class="timeline-item" data-aos="fade-right">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <h3>Senior Secondary (XII)</h3>
+                    <h4>DAV Public School, Sindri</h4>
+                    <p class="timeline-date">2020 – 2022</p>
+                    <p>Percentage (CBSE): 90.20%</p>
+                </div>
+            </div>
+            <div class="timeline-item" data-aos="fade-left">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <h3>Secondary School (X)</h3>
+                    <h4>DAV Public School, Sindri</h4>
+                    <p class="timeline-date">2019 – 2020</p>
+                    <p>Percentage (CBSE): 94%</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- ================= CERTIFICATES SECTION ================= -->
+<section id="certificates" class="certifications-section">
+    <div class="container">
+        <h2 class="section-title">Certificates</h2>
+        <div class="certifications-grid">
+            <!-- Certificate 1 -->
+            <div class="certification-card">
+                <div class="cert-image-placeholder">
+                    <img src="cert1.jpg" alt="Certificate 1" class="cert-img">
+                </div>
+                <div class="cert-content">
+                    <h3>GfG 160 Days of Problem Solving</h3>
+                    <p>Successfully completed a 22-week course on DSA.</p>
+                </div>
+            </div>
+
+            <!-- Certificate 2 -->
+            <div class="certification-card">
+                <div class="cert-image-placeholder">
+                    <img src="cert2.jpg" alt="Certificate 2" class="cert-img">
+                </div>
+                <div class="cert-content">
+                    <h3>FFE Certificate</h3>
+                    <p>Successfully completed the Fly in FFE Program and received the certificate of achievement.</p>
+                </div>
+            </div>
+
+           
+        </div>
+    </div>
+</section>
+
+<!-- ================= LIGHTBOX MODAL ================= -->
+<div class="lightbox">
+    <span class="lightbox-close">&times;</span>
+    <img id="lightbox-img" src="" alt="Certificate Preview">
+</div>
+
+
+<!-- Certificate Modal -->
+<div id="certificate-modal" class="certificate-modal" onclick="closeCertificateModal()">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="certificate-modal-img">
+</div>
+
+<section id="contact" class="contact-section">
+    <div class="container">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-content">
+            <div class="contact-info">
+                <h3>Let's Connect!</h3>
+                <p>Feel free to reach out for collaborations, projects, or opportunities.</p>
+                <div class="contact-details">
+                    <div class="contact-item"><i class="fas fa-phone"></i><span>+91-9279290726</span></div>
+                    <div class="contact-item"><i class="fas fa-envelope"></i><a href="mailto:mukherjee.moumita899@gmail.com">mukherjee.moumita899@gmail.com</a></div>
+                    <div clasRs="contact-item"><i class="fab fa-linkedin"></i><a href="https://www.linkedin.com/in/moumita-mukherjee064" target="_blank">LinkedIn Profile</a></div>
+                    <div class="contact-item"><i class="fab fa-github"></i><a href="https://github.com/Moumita-Mukherjee1234" target="_blank">GitHub Profile</a></div>
+                </div>
+            </div>
+            <form class="contact-form" onsubmit="handleFormSubmit(event)">
+                <div class="form-group"><input type="text" id="name" name="name" placeholder="Your Name" required></div>
+                <div class="form-group"><input type="email" id="email" name="email" placeholder="Your Email" required></div>
+                <div class="form-group"><textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea></div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
